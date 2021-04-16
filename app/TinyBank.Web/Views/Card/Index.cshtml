@@ -1,0 +1,50 @@
+﻿@page
+<div class="text-center">
+    <h1 class="display-4">Checkout</h1>
+</div>
+<div id="cardCheckoutStatus"></div>
+<div class="row">
+    <div class="col-md-6">
+        <label for="cc-number">Credit card number</label>
+        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+        <div class="invalid-feedback">
+            Credit card number is required
+        </div>
+    </div>
+</div>
+
+<label>Expiration</label>
+<div class="row">
+    
+    <div class="col-md-1">
+        <label for="cc-expiration">Year</label>
+        <input type="text" class="form-control" id="cc-expirationYear" placeholder="" required>
+        <div class="invalid-feedback">
+            Expiration Year required
+        </div>
+    </div>
+    <div class="col-md-1">
+        <label for="cc-expiration">Month</label>
+        <input type="text" class="form-control" id="cc-expirationMonth" placeholder="" required>
+        <div class="invalid-feedback">
+            Expiration Month required
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-2">
+        <label for="cc-number">Checkout Amount</label>
+        <input type="text" class="form-control" id="cc-amount" placeholder="" required>
+        <div class="invalid-feedback">
+            Amount is required
+        </div>
+    </div>
+</div>
+<hr class="mb-4">
+<button class="btn btn-primary btn-lg btn-block" type="submit" id="checkoutButton">Continue to checkout</button>
+<div class="overlay"></div>
+
+
